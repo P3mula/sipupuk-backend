@@ -1,5 +1,5 @@
 [phases.setup]
-nixPkgs = ["php81", "php81Extensions.pdo", "php81Extensions.pdo_mysql", "php81Extensions.mbstring", "php81Extensions.tokenizer", "php81Extensions.xml", "php81Extensions.ctype", "php81Extensions.fileinfo", "php81Extensions.bcmath", "composer"]
+nixPkgs = ["php82", "php82Extensions.pdo", "php82Extensions.pdo_mysql", "php82Extensions.mbstring", "php82Extensions.tokenizer", "php82Extensions.xml", "php82Extensions.ctype", "php82Extensions.fileinfo", "php82Extensions.bcmath", "composer"]
 
 [start]
 cmd = "php artisan migrate --force && php artisan serve --host=0.0.0.0 --port=$PORT"
