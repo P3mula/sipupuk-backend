@@ -7,7 +7,6 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Produk;
 use App\Models\Toko;
-use App\Models\KelompokTani;
 use App\Models\Satuan;
 
 class ProdukSeeder extends Seeder
@@ -60,7 +59,7 @@ class ProdukSeeder extends Seeder
         ];
 
         foreach ($produks as $produk) {
-            Produk::create($produk);
+            Produk::firstOrCreate($produk);
         }
     }
 }

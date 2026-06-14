@@ -44,7 +44,7 @@ class TokoSeeder extends Seeder
         ];
 
         foreach ($tokos as $toko) {
-            Toko::create($toko);
+            Toko::firstOrCreate($toko);
         }
     }
 }
