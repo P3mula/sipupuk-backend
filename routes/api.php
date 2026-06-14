@@ -5,10 +5,10 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\TokoController;
 use App\Http\Controllers\Api\ProdukController;
-use App\Http\Controllers\API\SatuanController;
+use App\Http\Controllers\Api\SatuanController;
 use App\Http\Controllers\Api\LaporanController;
 use App\Http\Controllers\Api\PesananController;
-use App\Http\Controllers\API\KategoriProdukController;
+use App\Http\Controllers\Api\KategoriProdukController;
 
 /*
 |--------------------------------------------------------------------------
