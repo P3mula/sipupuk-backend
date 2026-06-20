@@ -19,6 +19,8 @@ use App\Http\Controllers\Api\KategoriProdukController;
 // Auth Routes
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
+Route::post('/forgot-password/check-phone', [AuthController::class, 'checkPhone']);
+Route::post('/forgot-password/reset', [AuthController::class, 'resetPassword']);
 
 Route::get('/kategori-produk', [KategoriProdukController::class, 'index']);
 Route::get('/kategori-produk/{id}', [KategoriProdukController::class, 'show']);
